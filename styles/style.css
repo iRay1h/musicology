@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navegador*/
+nav {
+  background-color: rgba(0, 0, 0, 0.822);
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav .logo {
+  margin-left: 100px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+nav .search {
+  width: 40px;
+  height: 40px;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+/*Imagen primer fondo*/
+.banner {
+    background-image: url(../assets/images/background.png);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+/* informacion musicology*/
+.principal {
+  margin-top: 295px;
+  margin-left: 100px;
+  width: 590px;
+}
+.principal h1 {
+  font-size: 95px;
+  font-family: oswald, sans-serif;
+}
+
+.principal p {
+  font-size: 20px;
+  text-align: justify;
+  font-family: Montserrat, sans-serif;
+}
+.principal button {
+  background-color: rgb(255, 115, 0);
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 40px;
+  width: 280px;
+  height: 60px;
+}
+/* Dance tour*/
+.centro {
+  width: 100%;
+  height: 830px;
+  background-color: rgb(255, 102, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dance {
+  color: white;
+  width: 800px;
+  height: 200px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+.dance h1 {
+  font-family: oswald, sans-serif;
+  font-size: 70px;
+  text-align: center;
+  transform: scaleY(2);
+  transform: scalex(0.8);
+}
+
+.dance p {
+  width: 100%;
+  margin-top: 20px;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.1;
+}
+/* America, asia...*/
+.dances {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 500px;
+  width: 1300px;
+}
+.dance1 {
+  width: 400px;
+  height: 300px;
+}
+.dance1 img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.text {
+  padding: 30px;
+  color: white;
+  background-color: rgba(41, 41, 41, 0.973);
+}
+.text h1 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform: scaleY(1.5);
+}
+
+.text p {
+  font-size: 20px;
+  text-align: justify;
+}
+/* Pricing*/
+.pricing {
+  width: 100%;
+  height: 830px;
+  background-color: rgba(41, 41, 41, 0.973);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prin {
+  color: white;
+  width: 800px;
+  height: 200px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+.prin h1 {
+  font-family: oswald, sans-serif;
+  font-size: 70px;
+  text-align: center;
+  transform: scaleY(2);
+  transform: scalex(0.8);
+}
+
+.prin p {
+  width: 100%;
+  margin-top: 20px;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* Planes*/
+.dan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 500px;
+  width: 1200px;
+}
+.da {
+  width: 370px;
+  height: 470px;
+  background-color: rgb(255, 102, 0);
+  text-align: center;
+  padding: 30px;
+  color: white;
+  border-radius: 10px;
+}
+.da img {
+  margin-top: 30px;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.da h1 {
+  font-size: 26px;
+  font-family: oswald, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  transform: scaleY(1.5);
+}
+
+.da p {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+.text1 {
+  margin-top: 35px;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(41, 41, 41, 0.973);
+}
+/* pie de pagina*/
+footer {
+  background-color: rgb(255, 102, 0);
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Montserrat, sans-serif;
+}
