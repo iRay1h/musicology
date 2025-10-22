@@ -3,7 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* Navegador*/
+
+body {
+  width: 100%;
+
+}
+
+
 nav {
   background-color: rgba(0, 0, 0, 0.822);
   width: 100%;
@@ -13,46 +19,55 @@ nav {
   justify-content: space-between;
 }
 
-nav .logo {
+.logo {
   margin-left: 100px;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
-nav .search {
+.busca {
   width: 40px;
   height: 40px;
   margin-right: 60px;
   margin-top: 30px;
 }
-/*Imagen primer fondo*/
-.banner {
-    background-image: url(../assets/images/background.png);
+
+main {
+  width: 100%;
+}
+
+
+.Fondo {
+  background-image: url(../assets/images/background.png);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-repeat: no-repeat;
   height: 700px;
   width: 100%;
   display: flex;
   align-items: center;
   color: white;
 }
-/* informacion musicology*/
-.principal {
+
+
+.info {
   margin-top: 295px;
   margin-left: 100px;
   width: 590px;
 }
-.principal h1 {
+
+.info h1 {
   font-size: 95px;
   font-family: oswald, sans-serif;
 }
 
-.principal p {
+.info p {
   font-size: 20px;
   text-align: justify;
   font-family: Montserrat, sans-serif;
 }
-.principal button {
+
+.info button {
   background-color: rgb(255, 115, 0);
   font-size: 20px;
   cursor: pointer;
@@ -63,8 +78,16 @@ nav .search {
   width: 280px;
   height: 60px;
 }
-/* Dance tour*/
-.centro {
+
+.info button:hover {
+
+  background-color: rgb(157, 71, 0);
+  transition: 0.5s;
+
+}
+
+
+.principal {
   width: 100%;
   height: 830px;
   background-color: rgb(255, 102, 0);
@@ -72,14 +95,16 @@ nav .search {
   align-items: center;
   flex-direction: column;
 }
-.dance {
+
+.info2 {
   color: white;
   width: 800px;
   height: 200px;
   padding-top: 50px;
   margin-bottom: 80px;
 }
-.dance h1 {
+
+.info2 h1 {
   font-family: oswald, sans-serif;
   font-size: 70px;
   text-align: center;
@@ -87,7 +112,7 @@ nav .search {
   transform: scalex(0.8);
 }
 
-.dance p {
+.info2 p {
   width: 100%;
   margin-top: 20px;
   font-family: Montserrat, sans-serif;
@@ -96,19 +121,22 @@ nav .search {
   text-align: center;
   line-height: 1.1;
 }
-/* America, asia...*/
-.dances {
+
+
+.Continentes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 500px;
   width: 1300px;
 }
-.dance1 {
+
+.danza {
   width: 400px;
   height: 300px;
 }
-.dance1 img {
+
+.danza img {
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -116,12 +144,14 @@ nav .search {
   align-items: center;
   color: white;
 }
-.text {
+
+.info3 {
   padding: 30px;
   color: white;
   background-color: rgba(41, 41, 41, 0.973);
 }
-.text h1 {
+
+.info3 h1 {
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -129,12 +159,13 @@ nav .search {
   transform: scaleY(1.5);
 }
 
-.text p {
+.info3 p {
   font-size: 20px;
   text-align: justify;
 }
-/* Pricing*/
-.pricing {
+
+
+aside {
   width: 100%;
   height: 830px;
   background-color: rgba(41, 41, 41, 0.973);
@@ -143,14 +174,15 @@ nav .search {
   flex-direction: column;
 }
 
-.prin {
+.info4 {
   color: white;
   width: 800px;
   height: 200px;
   padding-top: 50px;
   margin-bottom: 80px;
 }
-.prin h1 {
+
+.info4 h1 {
   font-family: oswald, sans-serif;
   font-size: 70px;
   text-align: center;
@@ -158,7 +190,7 @@ nav .search {
   transform: scalex(0.8);
 }
 
-.prin p {
+.info4 p {
   width: 100%;
   margin-top: 20px;
   font-family: Montserrat, sans-serif;
@@ -168,15 +200,15 @@ nav .search {
   line-height: 1.1;
 }
 
-/* Planes*/
-.dan {
+.planes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   height: 500px;
   width: 1200px;
 }
-.da {
+
+.plan {
   width: 370px;
   height: 470px;
   background-color: rgb(255, 102, 0);
@@ -185,13 +217,14 @@ nav .search {
   color: white;
   border-radius: 10px;
 }
-.da img {
+
+.plan img {
   margin-top: 30px;
   background-position: center;
   margin-bottom: 30px;
 }
 
-.da h1 {
+.plan h1 {
   font-size: 26px;
   font-family: oswald, sans-serif;
   display: flex;
@@ -201,29 +234,671 @@ nav .search {
   transform: scaleY(1.5);
 }
 
-.da p {
+.plan p {
   font-size: 20px;
   font-family: Montserrat, sans-serif;
 }
 
-.text1 {
+.plan button {
   margin-top: 35px;
   padding: 20px;
   color: white;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  background-color: rgba(41, 41, 41, 0.973);
+  background-color: rgba(41, 41, 41);
+  width: 100%;
 }
-/* pie de pagina*/
+
+.plan button:hover {
+  background-color: rgba(0, 0, 0);
+  transition: 0.5s;
+
+}
+
+
 footer {
   background-color: rgb(255, 102, 0);
   width: 100%;
-  height: 70px;
+  height: 60px;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: Montserrat, sans-serif;
+}
+
+@media (max-width: 1300px) {
+
+  .Continentes,
+  .planes {
+    width: 100%;
+    max-width: 1000px;
+
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .danza,
+  .plan {
+    width: 35%;
+  }
+
+  .info2,
+  .info4 {
+    width: 90%;
+  }
+
+  .Fondo {
+    width: 100%;
+    background-position: top center;
+    background-size: cover;
+
+
+  }
+}
+
+
+@media (max-width:1050px) {
+
+  .danza,
+  .plan {
+    width: 30%;
+  }
+
+  .Fondo {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+
+
+  }
+
+  .logo {
+    width: 90px;
+    height: 70px;
+
+  }
+
+  .info {
+    width: 40%;
+    font-size: 5px;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .info h1 {
+    font-size: 40px;
+  }
+
+  .info button {
+
+
+    font-size: 25px;
+    width: 250px;
+    height: 55px;
+  }
+
+}
+
+@media (max-width:800px) {
+
+
+  .plan img {
+    height: 120px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .info button {
+    font-size: 20px;
+    width: 220px;
+    height: 50px;
+
+
+  }
+
+
+}
+
+@media (max-width:768px) {
+
+
+  .logo {
+    width: 60px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+
+  .busca {
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  nav {
+    height: 60px;
+    justify-content: space-between;
+  }
+
+  .info {
+    width: 40%;
+    justify-content: center;
+    margin-top: 150px;
+    margin-left: 40px;
+  }
+
+  .info h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+
+  .infobutton {
+
+
+    font-size: 15px;
+    width: 150px;
+    height: 35px;
+  }
+
+  .info2 {
+    color: white;
+    width: 400px;
+    height: 100px;
+    padding-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .info2 h1 {
+    font-family: oswald, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    transform: scaleY(1);
+    transform: scalex(0.4);
+  }
+
+  .info2 p {
+    width: 100%;
+    margin-top: 10px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .principal {
+    height: 500px;
+  }
+
+  .Continentes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 600px;
+  }
+
+  .danza {
+    width: 250px;
+    height: 150px;
+  }
+
+  .danza img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .info3 {
+    padding: 15px;
+    color: white;
+    background-color: rgba(41, 41, 41, 0.973);
+
+  }
+
+  .info3 h1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform: scaleY(1.5);
+  }
+
+  .info3 p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+
+  .info4 {
+    color: white;
+    width: 600px;
+    height: 140px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .info4 h1 {
+    font-family: oswald, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    transform: scaleY(1);
+    transform: scalex(0.4);
+  }
+
+  .info4 p {
+    width: 100%;
+    margin-top: 15px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+    width: 600px;
+
+  }
+
+  .plan {
+    width: 180px;
+    height: 300px;
+    background-color: rgb(255, 102, 0);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .plan img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    background-position: center;
+    margin-bottom: 15px;
+  }
+
+  .plan h1 {
+    font-size: 18px;
+    font-family: oswald, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    transform: scaleY(1.9);
+  }
+
+  .plan p {
+    font-size: 15px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .plan button {
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    background-color: rgba(41, 41, 41);
+    width: 100%;
+  }
+
+  aside {
+    height: 600px;
+  }
+
+  footer {
+    height: 60px;
+    font-size: 15px;
+  }
+
+}
+
+@media(max-width:610px) {
+
+
+  .Continentes {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 500px;
+    margin: 0px;
+  }
+
+  .danza {
+    width: 180px;
+    height: 150px;
+  }
+
+
+  .info button {
+    font-size: 15px;
+    width: 180px;
+    height: 40px;
+
+  }
+
+  .plan {
+    width: 150px;
+    height: 300px;
+    background-color: rgb(255, 102, 0);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 800px;
+    width: 500px;
+
+  }
+
+  .info3 {
+    padding: 10px;
+  }
+
+  .info4 {
+    width: 500px;
+  }
+
+}
+
+@media(max-width:500px) {
+
+
+  .Continentes {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 450px;
+    margin: 20px;
+  }
+
+  .danza {
+    width: 170px;
+    height: 150px;
+  }
+
+
+  .info button {
+    font-size: 14px;
+    width: 170px;
+    height: 40px;
+    margin-top: 17px;
+
+  }
+
+  .info p {
+    font-size: 12px;
+  }
+
+  .info3 p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .plan {
+    width: 120px;
+    height: 300px;
+    background-color: rgb(255, 102, 0);
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 800px;
+    width: 400px;
+
+  }
+
+  .plan p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+
+  .plan h1 {
+    font-size: 14px;
+    font-family: oswald, sans-serif;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 25px;
+    margin-top: 10px;
+    transform: scaleY(1.9);
+  }
+
+
+  .info3 {
+    padding: 10px;
+  }
+
+  .info4 {
+    width: 400px;
+
+  }
+
+  .info4 p {
+    font-size: 17px;
+  }
+
+}
+
+@media(max-width:480px) {
+
+  .Fondo {
+    height: 400px;
+  }
+
+  .info {
+    margin-top: 80px;
+  }
+
+  .Continentes {
+    height: 330px;
+    width: 420px;
+    margin: 0px;
+  }
+
+  .danza {
+    width: 125px;
+  }
+
+  .principal {
+    height: 450px;
+  }
+
+  aside {
+    height: 500px;
+  }
+
+  .info4 {
+    padding: 15px;
+    margin: 0px 0px 30px;
+    width: 400px;
+    font-size: 15px;
+  }
+
+
+  .info4 h1 {
+
+    font-size: 60px;
+  }
+
+  .info4 p {
+
+    margin: 5px;
+
+  }
+
+  .planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+
+  }
+
+  .plan {
+    background-color: rgb(255, 102, 0);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    height: 250px;
+  }
+
+  .plan img {
+
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin: 10px 7px 3px 7px;
+
+  }
+
+  .plan h1 {
+
+    font-family: oswald, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform: scaleY(1.5);
+  }
+
+  .plan p {
+
+    font-family: Montserrat, sans-serif;
+  }
+
+  .plan button {
+    font-size: 13px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(41, 41, 41);
+    width: 100%;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+
+
+
+}
+
+@media(max-width:410px) {
+
+  .info h1 {
+    font-size: 20px;
+  }
+
+  .info p {
+    font-size: 9px;
+  }
+
+  .info button {
+    font-size: 12px;
+    width: 130px;
+    height: 30px;
+  }
+
+  .info2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info2 h1{
+    font-size: 45px;
+  }
+
+  .info4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info4 h1{
+    font-size: 45px;
+  }
+
+  .info2 p {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .Continentes {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .danza{
+    width: 100px;
+  }
+
+  .danza h1{
+    font-size: 50%;
+  }
+
+
+  .info4 p{
+    font-size: 13px;
+  }
+
+  .planes{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .plan{
+    width: 100px;
+  }
+
+  .plan h1{
+    font-size: 12px;
+  }
+
+  footer{
+    font-size: 10px;
+  }
+
 }
